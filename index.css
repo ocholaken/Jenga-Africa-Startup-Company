@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  nav {
+   display: flex;
+   /* justify-content: space-between; */
+   align-items: center;
+   margin-bottom: 2rem;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   padding: 20px 70%;
+   gap: 20px;
+   
+  }
+  
+  nav a {
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    background-image: url('company.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: calc(100vh - 60px);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 180px;
+    font-weight: 500;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Button Styles */
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 60px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-primary {
+    background-color: red;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: black;
+  }
+  
+  /* About Section Styles */
+  .about-us {
+    background-color: #f2f2f2;
+    padding: 3rem;
+  }
+  
+  .about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-us p {
+    font-size: 1.2rem;
+  }
+  .services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .service {
+    width: calc(33.33% - 1rem);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .service img {
+    width: 60%;
+    height: auto;
+    padding:0 2rem ;
+     /* margin-bottom: 1rem;  */
+    /* border-radius: 50%; */
+    text-align: center;
+  }
+   
+  
+  .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  
+  }
+  
+  .service p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  
+  /* Team Section Styles */
+  .team {
+    background-color: #f2f2f2;
+    padding: 3rem;
+  }
+  
+  .team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    
+  }
+  
+  .team li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Contact Us Section Styles */
+  .contact-us {
+    padding: 3rem;
+  }
+  
+  .contact-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+    
+   
+/* Contact Form Styles */
+form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    }
+    
+    form input[type="text"], form input[type="email"], form textarea {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1rem;
+    }
+    
+    form textarea {
+    height: 150px;
+    }
+    
+    form input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    width: 100px;
+    align-self: flex-end;
+    }
+    
+    form input[type="submit"]:hover {
+    background-color: #3E8E41;
+    cursor: pointer;
+    }
+    
+    /* Footer Styles */
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    }
+    
+    footer p {
+    font-size: 1.2rem;
+    }
+    
+    footer ul li {
+    margin-bottom: 0.5rem;
+    }
+    
+    footer a {
+    color: #fff;
+    font-weight: bold;
+    }
+    
+    @media only screen and (max-width: 768px) {
+    nav {
+    padding: 0 10px;
+    }
+    
+    .hero {
+    height: auto;
+    }
+    
+    .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    }
+    
+    .hero p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    }
+    
+    .btn {
+    font-size: 0.8rem;
+    padding: 0.3rem 1rem;
+    }
+    
+    .about-us p {
+    font-size: 1rem;
+    }
+    
+    .services li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    }
+    
+    .team li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    }
+    
+    form label {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    }
+    
+    form input[type="text"], form input[type="email"], form textarea {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    }
+    
+    form input[type="submit"] {
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    align-self: center;
+    }
+    }  
